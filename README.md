@@ -1,34 +1,10 @@
 # Printer Services Website
 
-Static site (HTML/CSS/JS). No build step.
+Static site, no build step.
 
-## 1. Edit your details
-Open `site.js` and change the `var C={...}` line (business name, phone, email, hours, address).
-Phone is already set to +1 (844) 516-9721.
+1. Edit `site.js` (first line): address (name set to PrinterCraftTech). Phone is set to +1 (844) 516-9721.
+2. Domain in `sitemap.xml`/`robots.txt` is set to printercrafttech.com; change if different.
+3. Push to GitHub, then Vercel: Add New > Project > import repo > Framework Preset "Other" > Deploy.
+4. Vercel > Settings > Domains: add your domain and set the DNS records shown.
 
-## 2. Replace the domain
-Find/replace `yourdomain.com` with your real domain in `index.html`, `sitemap.xml`, `robots.txt`.
-
-## 3. GitHub
-```
-git init
-git add .
-git commit -m "Initial site"
-git branch -M main
-git remote add origin https://github.com/YOUR-USER/YOUR-REPO.git
-git push -u origin main
-```
-
-## 4. Vercel
-1. vercel.com -> Add New -> Project -> import the GitHub repo.
-2. Framework Preset: **Other**. Leave build command and output directory empty.
-3. Deploy.
-4. Project -> Settings -> Domains -> add your domain and set the DNS records Vercel shows.
-5. Confirm HTTPS works.
-
-## Before running Google Ads
-- Complete Advertiser Verification (tech support) in Google Ads.
-- Use real business name, address, email and hours; they must match your verification.
-- Keep the "independent, not affiliated with Canon/HP/Epson" disclaimer. No "official" wording, no brand logos.
-- Ad phone number must match the page number (or use a Google forwarding number as call asset).
-- Check these URLs load: /privacy /terms /disclaimer /robots.txt /sitemap.xml
+Before ads: complete Google Advertiser Verification (tech support), keep the independence disclaimer, no "official" wording, match the phone number in ads.
